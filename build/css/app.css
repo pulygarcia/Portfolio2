@@ -1,0 +1,677 @@
+/*Tipografias*/
+/*Colores*/
+/*medidas*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Jost", sans-serif;
+  scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  width: 95%;
+}
+
+/*BG-image*/
+/*BOTONES*/
+/*Media querys*/
+/*Animaciones*/
+@keyframes escribiendo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotacion {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes salto {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*AFTERS headings*/
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+span {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.3rem;
+  margin: 0;
+  line-height: 1.3;
+}
+@media (min-width: 410px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 7.3rem;
+  }
+}
+
+h2 {
+  font-size: 3.8rem;
+  color: #fff;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../../img/bg-inicio.jpg");
+  background-size: cover;
+}
+
+.header__barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: rgb(244, 54, 54) 9px 0px 20px 1px;
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  .header__barra {
+    padding: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
+.header__logo {
+  font-family: "Bruno Ace SC", cursive;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.header__logo span {
+  color: rgb(244, 54, 54);
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    font-size: 3.5rem;
+  }
+}
+.header__nav {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  padding: 3rem;
+}
+@media (min-width: 1024px) {
+  .header__nav {
+    visibility: visible;
+    opacity: 1;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 0;
+    position: unset;
+  }
+}
+.header__nav.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+.header__burguer, .header__burguer-close {
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 1024px) {
+  .header__burguer, .header__burguer-close {
+    display: none;
+  }
+}
+.header__burguer-close {
+  text-align: right;
+}
+.header__enlace {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: 0.2s ease;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.header__enlace:hover {
+  color: rgb(244, 54, 54);
+}
+
+.principal {
+  padding-top: 3rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .principal {
+    padding-top: 30rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5rem;
+  }
+}
+.principal__contenido {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .principal__contenido {
+    text-align: left;
+  }
+}
+.principal__imagen img {
+  width: 10rem;
+  animation-name: rotacion;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@media (min-width: 410px) {
+  .principal__imagen img {
+    width: 15rem;
+  }
+}
+@media (min-width: 1024px) {
+  .principal__imagen img {
+    width: 22rem;
+  }
+}
+.principal__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .principal__heading {
+    flex-direction: row;
+  }
+}
+.principal__rocket {
+  width: 10rem;
+  animation-name: salto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.principal__escribiendo {
+  animation-name: escribiendo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  color: rgb(244, 54, 54);
+}
+.principal__texto {
+  color: #e2d5d5;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  text-align: center;
+}
+@media (min-width: 410px) {
+  .principal__texto {
+    line-height: 1.4;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .principal__texto {
+    text-align: left;
+    font-size: 2.3rem;
+  }
+}
+.principal__texto span {
+  color: rgb(244, 54, 54);
+  font-weight: 700;
+}
+.principal__boton {
+  background-color: rgba(0, 0, 0, 0.7411764706);
+  border: 1px solid rgb(244, 54, 54);
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 1rem 0;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+}
+.principal__boton:hover {
+  background-image: linear-gradient(to right, #fd6823 0%, #cc2323 50%, #f14040 100%);
+  border: 1px solid rgba(0, 0, 0, 0.7411764706);
+}
+@media (min-width: 410px) {
+  .principal__boton {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+}
+
+.flotantes {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+@media (min-width: 1024px) {
+  .flotantes {
+    left: 0;
+    top: 50%;
+    bottom: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.flotantes__imagen {
+  width: 3rem;
+  transition: 0.2s ease;
+}
+.flotantes__imagen:hover {
+  transform: scale(1.1);
+}
+
+.proyectos {
+  padding: 5rem 0;
+  color: #fff;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../img/proyectos-bg.jpg");
+  background-size: cover;
+}
+.proyectos__heading {
+  font-family: "Bruno Ace SC", cursive;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.proyectos__heading::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  display: block;
+  background-image: url("../../../img/coding_computer_pc_screen_code_icon_193955.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.proyectos__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .proyectos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.proyectos__card {
+  padding: 1.5rem;
+  background-color: #121010;
+  border-radius: 2.5rem;
+  border: 1px solid transparent;
+  box-shadow: #191729 0px 0px 15px 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  overflow: hidden;
+}
+.proyectos__card-imagen {
+  height: 23rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  transition: 0.2s ease;
+}
+.proyectos__card-imagen:hover {
+  transform: scale(1.1);
+}
+.proyectos__card-heading {
+  font-size: 2rem;
+  margin: 1.3rem 0;
+  text-align: center;
+}
+.proyectos__card-tecnologias {
+  font-weight: normal;
+  margin: 0;
+  background-color: rgba(55, 88, 124, 0.4);
+  border: 1px solid rgb(55, 54, 244);
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.proyectos__card-tecnologias span {
+  font-weight: 700;
+}
+.proyectos__card-botones {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.proyectos__card-botones a {
+  background-color: rgba(0, 0, 0, 0.7411764706);
+  border: 1px solid rgb(244, 54, 54);
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 1rem 0;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 1px solid rgb(55, 54, 244);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.proyectos__card-botones a:hover {
+  background-image: linear-gradient(to right, #fd6823 0%, #cc2323 50%, #f14040 100%);
+  border: 1px solid rgba(0, 0, 0, 0.7411764706);
+}
+
+.conocimientos {
+  padding: 5rem 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../img/conocimientos-bg-nuevo.jpg");
+  background-size: cover;
+}
+.conocimientos__heading {
+  font-family: "Bruno Ace SC", cursive;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.conocimientos__heading::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  display: block;
+  background-image: url("../../../img/after-estudios.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.conocimientos__texto {
+  color: #fff;
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+.conocimientos__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.3rem;
+}
+@media (min-width: 768px) {
+  .conocimientos__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.conocimientos__item {
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.conocimientos__item-img {
+  width: 5rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .conocimientos__item-img {
+    width: 8rem;
+  }
+}
+.conocimientos__item-name {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/*colores tecnologias*/
+.javascript {
+  box-shadow: yellow 1px 1px 10px 0px;
+  transition: 0.2s ease;
+}
+.javascript:hover {
+  box-shadow: yellow 1px 1px 20px 0px;
+}
+
+.css {
+  box-shadow: blue 1px 1px 10px 0px;
+  transition: 0.2s ease;
+}
+.css:hover {
+  box-shadow: blue 1px 1px 20px 0px;
+}
+
+.sass {
+  box-shadow: #e52f4e 1px 1px 10px 0px;
+  transition: 0.2s ease;
+}
+.sass:hover {
+  box-shadow: #e52f4e 1px 1px 20px 0px;
+}
+
+.bootstrap {
+  box-shadow: #942e94 1px 1px 10px 0px;
+  transition: 0.2s ease;
+}
+.bootstrap:hover {
+  box-shadow: #942e94 1px 1px 20px 0px;
+}
+
+.html {
+  box-shadow: orange 1px 1px 10px 0px;
+  transition: 0.2s ease;
+  grid-column: 1/3;
+}
+.html:hover {
+  box-shadow: orange 1px 1px 20px 0px;
+}
+@media (min-width: 768px) {
+  .html {
+    grid-column: unset;
+  }
+}
+
+.estudios__heading {
+  text-align: center;
+  color: #fff;
+  font-family: "Bruno Ace SC", cursive;
+  margin: 5rem 0;
+}
+.estudios__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .estudios__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.estudios__item {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3rem;
+  border-radius: 2rem;
+}
+.estudios__item-img {
+  width: 8rem;
+  margin: 0 auto;
+}
+.estudios__item-texto {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.sobre-mi {
+  padding: 5rem 0;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../img/sobre-mi-bg.jpg");
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .sobre-mi {
+    text-align: left;
+  }
+}
+.sobre-mi span {
+  color: #5edf5e;
+}
+.sobre-mi__heading {
+  text-align: center;
+  color: #fff;
+  font-family: "Bruno Ace SC", cursive;
+}
+.sobre-mi__heading::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  display: block;
+  background-image: url("../../../img/sobre-mi-icon.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.sobre-mi__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .sobre-mi__grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+  }
+}
+.sobre-mi__titulo {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .sobre-mi__titulo {
+    font-size: 3.2rem;
+  }
+}
+.sobre-mi__imagen {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 3rem;
+  box-shadow: #5edf5e 8px 3px 15px 1px;
+  animation-name: latido;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.sobre-mi__texto {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+@media (min-width: 768px) {
+  .sobre-mi__texto {
+    font-size: 2.3rem;
+  }
+}
+
+.contacto {
+  padding: 5rem 0;
+  color: #fff;
+}
+.contacto__heading {
+  font-family: "Bruno Ace SC", cursive;
+  text-align: center;
+  margin: 5rem 0;
+}
+.contacto__heading::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  display: block;
+  background-image: url("../../../img/contacto-icono.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.contacto__texto {
+  margin: 4rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.contacto__redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.contacto__red {
+  padding: 2rem;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid rgb(54, 244, 220);
+}
+.contacto__red-imagen {
+  width: 8rem;
+  border-radius: 50%;
+  animation-name: latido;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/*# sourceMappingURL=app.css.map */

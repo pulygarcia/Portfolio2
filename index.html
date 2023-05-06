@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio Puly v2</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="header__barra">
+                <p class="header__logo"><span><\</span>Puly.dev<span>></span></p>
+
+                <button class="header__burguer"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg></button><!--Burguer-->
+
+                <nav class="header__nav">
+                    <button class="header__burguer-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </button>
+                    <a href="#sobre-mi" class="header__enlace">Sobre mi
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(244 54 54)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="7" r="4" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
+                    </a>
+                    <a href="#proyectos" class="header__enlace">Proyectos
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-briefcase" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(244 54 54)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="3" y="7" width="18" height="13" rx="2" />
+                            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+                            <line x1="12" y1="12" x2="12" y2="12.01" />
+                            <path d="M3 13a20 20 0 0 0 18 0" />
+                        </svg>
+                    </a>
+                    <a href="#conocimientos" class="header__enlace">Conocimientos
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(244 54 54)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                            <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                            <line x1="3" y1="6" x2="3" y2="19" />
+                            <line x1="12" y1="6" x2="12" y2="19" />
+                            <line x1="21" y1="6" x2="21" y2="19" />
+                        </svg>
+                    </a>
+                    <a href="#contacto" class="header__enlace">Contacto
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headset" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(244 54 54)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="13" rx="2" width="4" height="6" />
+                            <rect x="16" y="13" rx="2" width="4" height="6" />
+                            <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+                            <path d="M18 19a6 3 0 0 1 -6 3" />
+                        </svg>
+                    </a>
+                </nav><!--Navegacion-->
+            </div><!--Barra-->
+        </header>
+
+        <section class="container">
+            <div class="principal">
+                <article class="principal__contenido">
+                    <div class="principal__heading">
+                        <h1>FrontEnd developer.<span class="principal__escribiendo">|</span></h1>
+                        <img class="principal__rocket" src="img/rocket_space_icon_231382.png" alt="coding">
+                    </div>
+                    <p class="principal__texto">¡Bienvenid@ a mi portfolio! Mi nombre es <span>José Ignacio</span> y tengo 20 años. Soy de Tucumán, Argentina. Estoy encantado de la <span>programación</span> y la tecnología. Me encuentro estudiando y desarrollando proyectos frontend utilizando las tecnologías más emergentes, haciendo uso de buenas prácticas y en constante aprendizaje. Con el fin de conseguir una oportunidad como desarrollador.</p>
+                    <a href="#proyectos" class="principal__boton">Portfolio --></a>
+                </article>
+
+                <div class="principal__imagen">
+                    <img src="img/world_256_icon-icons.com_76007.png" alt="me image">
+                </div>
+            </div>
+        </section>
+
+        <!--FLOTANTES-->
+        <div class="flotantes">
+            <div class="flotantes__contenedor">
+                <a href="https://www.linkedin.com/in/jose-ignacio-robledo-puly-008661239/" target="_blank">
+                    <img class="flotantes__imagen" src="img/in_linked_linkedin_media_social_icon_124259.svg" alt="linkedin icon">
+                </a>
+            </div>
+            <div class="flotantes__contenedor">
+                <a href="https://github.com/pulygarcia" target="_blank">
+                    <img class="flotantes__imagen" src="img/Github-Icon_icon-icons.com_52888.png" alt="github icon">
+                </a>
+            </div>
+            <div class="flotantes__contenedor">
+                <a href="https://wa.me/3815429673?text=Hola Vengo desde tu portfolio. " target="_blank">
+                    <img class="flotantes__imagen" src="img/iconfinder-social-media-applications-23whatsapp-4102606_113811.svg" alt="whatsapp icon">
+                </a>
+            </div>
+            <div class="flotantes__contenedor">
+                <a href="https://www.instagram.com/puly___garcia/" target="_blank">
+                    <img class="flotantes__imagen" src="img/iconfinder-social-media-applications-3instagram-4102579_113804.svg" alt="instagram icon">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section class="proyectos" id="proyectos">
+        <h2 class="proyectos__heading">Proyectos</h2>
+        <div class="proyectos__grid container">
+            <article class="proyectos__card">
+                <div class="proyectos__card-contenedorImagen">
+                    <img class="proyectos__card-imagen" src="img/pacientes-propio-cap.PNG" alt="proyecto imagen">
+                </div>
+
+                <h4 class="proyectos__card-heading">Administrador pacientes POO</h4>
+
+                <p class="proyectos__card-tecnologias"><span>Tecnologías: </span> CSS - Javascript POO - HTML</p>
+
+                <div class="proyectos__card-botones">
+                    <a href="https://admin-pacientes-puly-poojs.netlify.app" target="_blank">Visualizar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                          </svg>
+                    </a>
+                    <a href="https://github.com/pulygarcia/Pacientes-poo-js">Repositorio
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+            </article>
+
+            <article class="proyectos__card">
+                <div>
+                    <img class="proyectos__card-imagen" src="img/movie-cap.PNG" alt="proyecto imagen">
+                </div>
+
+                <h4 class="proyectos__card-heading">Buscador de películas Omdb API</h4>
+
+                <p class="proyectos__card-tecnologias"><span>Tecnologías: </span> CSS - Javascript - HTML</p>
+
+                <div class="proyectos__card-botones">
+                    <a href="https://guia-peliculas-puly.netlify.app" target="_blank">Visualizar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                          </svg>
+                        
+                    </a>
+                    <a href="https://github.com/pulygarcia/Movie-searcher">Repositorio 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </article>
+            
+            <article class="proyectos__card">
+                <div>
+                    <img class="proyectos__card-imagen" src="img/gasto-cap.PNG" alt="proyecto imagen">
+                </div>
+
+                <h4 class="proyectos__card-heading">Gastos personales</h4>
+
+                <p class="proyectos__card-tecnologias"><span>Tecnologías: </span> Bootstrap - Javascript - HTML</p>
+
+                <div class="proyectos__card-botones">
+                    <a href="https://to-do-localstorage-puly.netlify.app" target="_blank">Visualizar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                          </svg>
+                    </a>
+                    <a href="#">Repositorio
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </article>
+
+            <article class="proyectos__card">
+                <div>
+                    <img class="proyectos__card-imagen" src="img/pizzería.PNG" alt="proyecto imagen">
+                </div>
+
+                <h4 class="proyectos__card-heading">Sitio web pizzería</h4>
+                
+                <p class="proyectos__card-tecnologias"><span>Tecnologías: </span> CSS - SASS - HTML</p>
+
+                <div class="proyectos__card-botones">
+                    <a href="https://pizzas-project-puly.netlify.app" target="_blank">Visualizar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                          </svg>
+                    </a>
+                    <a href="https://github.com/pulygarcia/Pizza-project-CSS-SASS-">Repositorio
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </article>
+
+            <article class="proyectos__card">
+                <div>
+                    <img class="proyectos__card-imagen" src="img/project-guitarLA.PNG" alt="proyecto imagen">
+                </div>
+
+                <h4 class="proyectos__card-heading">Front tienda de Guitarras</h4>
+
+                <p class="proyectos__card-tecnologias"><span>Tecnologías: </span> CSS - HTML</p>
+
+                <div class="proyectos__card-botones">
+                    <a href="https://proyecto-tienda-puly.netlify.app" target="_blank">Visualizar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                          </svg>
+                    </a>
+                    <a href="https://github.com/pulygarcia/Tienda-guitarras-CSS-only">Repositorio
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </article>
+
+            <article class="proyectos__card">
+                <div>
+                    <img class="proyectos__card-imagen" src="img/weather-cap.PNG" alt="proyecto imagen">
+                </div>
+
+                <h4 class="proyectos__card-heading">Versión de App del clima JS</h4>
+
+                <p class="proyectos__card-tecnologias"><span>Tecnologías: </span> CSS - Javascript - HTML</p>
+
+                <div class="proyectos__card-botones">
+                    <a href="https://weather-app-version-puly.netlify.app" target="_blank">Visualizar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                          </svg>
+                    </a>
+                    <a href="https://github.com/pulygarcia/Weather-app-version">Repositorio
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+
+    <section class="conocimientos" id="conocimientos">
+        <div class="container">
+            <h2 class="conocimientos__heading">Conocimientos</h2>
+            <p class="conocimientos__texto">Experiencia en uso de tecnologías: </p>
+            <div class="conocimientos__grid">
+                <div class="conocimientos__item javascript">
+                    <img class="conocimientos__item-img" src="img/javascript_original_logo_icon_146455.svg" alt="icon">
+                    <p class="conocimientos__item-name">Javascript</p>
+                </div>
+                <div class="conocimientos__item css">
+                    <img class="conocimientos__item-img" src="img/css-icon.svg" alt="icon">
+                    <p class="conocimientos__item-name">CSS</p>
+                </div>
+                <div class="conocimientos__item sass">
+                    <img class="conocimientos__item-img" src="img/sass-icon.svg" alt="icon">
+                    <p class="conocimientos__item-name">Sass</p>
+                </div>
+                <div class="conocimientos__item bootstrap">
+                    <img class="conocimientos__item-img" src="img/bootstrap-icon.svg" alt="icon">
+                    <p class="conocimientos__item-name">Bootstrap</p>
+                </div>
+                <div class="conocimientos__item html">
+                    <img class="conocimientos__item-img" src="img/html-icon.svg" alt="icon">
+                    <p class="conocimientos__item-name">HTML</p>
+                </div>
+            </div>
+
+            
+            <section class="estudios">
+                <h2 class="estudios__heading">Estudios</h2>
+                <div class="container">
+                    <div class="estudios__grid">
+                        <article class="estudios__item">
+                            <img class="estudios__item-img" src="img/titulo.svg" alt="icon">
+                            <p class="estudios__item-texto">Estudiante tec. superior en programación</p>
+                        </article>
+
+                        <article class="estudios__item">
+                            <img class="estudios__item-img" src="img/sombrero.png" alt="icon">
+                            <p class="estudios__item-texto">Secundario terminado</p>
+                        </article>
+
+                        <article class="estudios__item">
+                            <img class="estudios__item-img" src="img/capacitaciones-icon.svg" alt="icon">
+                            <p class="estudios__item-texto">Otras capacitaciones en tecnologías</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="container">
+            <h2 class="sobre-mi__heading">Sobre mí</h2>
+
+            <div class="sobre-mi__grid">
+                <img class="sobre-mi__imagen" src="img/IMG_20221210_114420_809 (1).jpg" alt="Imagen de José ignacio">
+
+                <div class="sobre-mi__contenido">
+                    <h3 class="sobre-mi__titulo">¡Hola! Soy <span>José Ignacio</span></h3>
+                    <p class="sobre-mi__texto">Siempre he tenido curiosidad sobre como funciona la tecnología y por eso la <span>programación</span> me apasiona. Me considero una persona abierta a escuchar opiniones diferentes a las mías, y siempre estoy dispuesto a recibir críticas constructivas para mejorar mis proyectos. Me gusta el trabajo en equipo y la colaboración mutua.</p>
+                    <p class="sobre-mi__texto">Fuera del mundo de la tecnología, dedico parte de mi tiempo a estudiar inglés, ya que considero que es fundamental. También disfruto compartiendo momentos con mis seres queridos, y practicando deportes como el pádel para mantenerme activo.</p>
+                </div>
+            </div>
+
+            <div class="contacto" id="contacto">
+                <h2 class="contacto__heading">Contactame</h2>
+
+                <p class="contacto__texto">¡Podrás encontrarme aquí!</p>
+
+                <div class="contacto__redes">
+                    <a href="https://wa.me/3815429673?text=Hola Vengo desde tu portfolio. " target="_blank">
+                        <article class="contacto__red">
+                            <img class="contacto__red-imagen" src="img/iconfinder-social-media-applications-23whatsapp-4102606_113811.svg" alt="whatsapp logo">
+                        </article>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jose-ignacio-robledo-puly-008661239/" target="_blank">
+                        <article class="contacto__red">
+                            <img class="contacto__red-imagen" src="img/in_linked_linkedin_media_social_icon_124259.svg" alt="linkedin logo">
+                        </article>
+                    </a>
+                    <a href="https://www.instagram.com/puly___garcia/" target="_blank">
+                        <article class="contacto__red">
+                            <img class="contacto__red-imagen" src="img/iconfinder-social-media-applications-3instagram-4102579_113804.svg" alt="Instagram logo">
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
