@@ -573,7 +573,7 @@ main {
   }
 }
 .sobre-mi span {
-  color: #5edf5e;
+  color: #35e1c5;
 }
 .sobre-mi__heading {
   text-align: center;
@@ -615,7 +615,7 @@ main {
   height: 25rem;
   object-fit: cover;
   border-radius: 3rem;
-  box-shadow: #5edf5e 8px 3px 15px 1px;
+  box-shadow: #35e1c5 8px 3px 15px 1px;
   animation-name: latido;
   animation-duration: 2s;
   animation-iteration-count: infinite;
