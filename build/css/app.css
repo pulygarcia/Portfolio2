@@ -607,8 +607,8 @@ main {
   }
 }
 .sobre-mi__imagen {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: #35e1c5 8px 3px 15px 1px;
