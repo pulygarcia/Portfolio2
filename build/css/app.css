@@ -610,7 +610,7 @@ main {
   width: 25rem;
   height: 25rem;
   object-fit: cover;
-  border-radius: 3rem;
+  border-radius: 50%;
   box-shadow: #35e1c5 8px 3px 15px 1px;
   animation-name: latido;
   animation-duration: 2s;
@@ -657,17 +657,17 @@ main {
   gap: 3rem;
 }
 .contacto__red {
-  padding: 2rem;
-  border-radius: 50%;
+  padding: 1rem;
+  border-radius: 1rem;
   background-color: black;
   border: 1px solid rgb(54, 244, 220);
-}
-.contacto__red-imagen {
-  width: 8rem;
-  border-radius: 50%;
   animation-name: latido;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+.contacto__red-imagen {
+  width: 8rem;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=app.css.map */
