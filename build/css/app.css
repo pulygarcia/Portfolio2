@@ -16,6 +16,7 @@ body {
   font-size: 1.6rem;
   padding: 0;
   margin: 0;
+  background-color: rgb(5, 5, 5);
 }
 
 img {
@@ -68,6 +69,37 @@ img {
     transform: scale(1);
   }
 }
+@keyframes radius {
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/*Fade animations*/
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  }
+  @keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  transform: none;
+  }
+  } /*Fade In Up*/
+
+
+
 /*AFTERS headings*/
 a {
   text-decoration: none;
@@ -242,6 +274,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-shadow: 2px 5px 2px #f14040;
 }
 @media (min-width: 1024px) {
   .principal__heading {
@@ -338,6 +371,7 @@ main {
   color: #fff;
   text-align: center;
   margin-bottom: 5rem;
+  text-shadow: 2px 5px 2px #2828cd;
 }
 .proyectos__heading::after {
   content: "";
@@ -431,6 +465,7 @@ main {
   font-family: "Bruno Ace SC", cursive;
   text-align: center;
   margin-bottom: 5rem;
+  text-shadow: 2px 5px 2px #cc8e1c;
 }
 .conocimientos__heading::after {
   content: "";
@@ -464,11 +499,6 @@ main {
 .conocimientos__item-img {
   width: 5rem;
   margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .conocimientos__item-img {
-    width: 8rem;
-  }
 }
 .conocimientos__item-name {
   color: #fff;
@@ -510,10 +540,17 @@ main {
   box-shadow: #942e94 1px 1px 20px 0px;
 }
 
+.tailwind {
+  box-shadow: #0d96c0 1px 1px 10px 0px;
+  transition: 0.2s ease;
+}
+.tailwind:hover {
+  box-shadow: #0d96c0 1px 1px 20px 0px;
+}
+
 .html {
   box-shadow: orange 1px 1px 10px 0px;
   transition: 0.2s ease;
-  grid-column: 1/3;
 }
 .html:hover {
   box-shadow: orange 1px 1px 20px 0px;
@@ -529,6 +566,7 @@ main {
   color: #fff;
   font-family: "Bruno Ace SC", cursive;
   margin: 5rem 0;
+  text-shadow: 2px 5px 2px #aeae0c;
 }
 .estudios__grid {
   display: flex;
@@ -575,6 +613,7 @@ main {
   text-align: center;
   color: #fff;
   font-family: "Bruno Ace SC", cursive;
+  text-shadow: 2px 5px 2px #20a190;
 }
 .sobre-mi__heading::after {
   content: "";
@@ -610,10 +649,10 @@ main {
   width: 20rem;
   height: 20rem;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   box-shadow: #35e1c5 8px 3px 15px 1px;
-  animation-name: latido;
-  animation-duration: 2s;
+  animation-name: radius;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
 }
 .sobre-mi__texto {
@@ -630,11 +669,13 @@ main {
 .contacto {
   padding: 5rem 0;
   color: #fff;
+  background-color: rgb(5, 5, 5);
 }
 .contacto__heading {
   font-family: "Bruno Ace SC", cursive;
   text-align: center;
   margin: 5rem 0;
+  text-shadow: 2px 5px 2px #4d4747;
 }
 .contacto__heading::after {
   content: "";
@@ -646,7 +687,7 @@ main {
   margin: 0 auto;
 }
 .contacto__texto {
-  margin: 4rem 0;
+  margin: 1rem 0;
   font-size: 2rem;
   text-align: center;
 }
@@ -655,19 +696,29 @@ main {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  margin-top: 3rem;
 }
-.contacto__red {
-  padding: 1rem;
-  border-radius: 1rem;
-  background-color: black;
-  border: 1px solid rgb(54, 244, 220);
-  animation-name: latido;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+.contacto__icono{
+  padding: .5rem;
+  border: 1px solid #4d4747;
+  border-radius: 50%;
+  transition: .2s ease;
 }
-.contacto__red-imagen {
-  width: 8rem;
-  border-radius: 1rem;
+.contacto__icono:hover{
+  stroke: #fff;
+}
+
+.wsp:hover{
+  stroke: #31d939;
+}
+.insta:hover{
+  stroke: orangered;
+}
+.linkedin:hover{
+  stroke: rgb(0, 183, 255);
+}
+.github:hover{
+  stroke: #701085;
 }
 
 /*# sourceMappingURL=app.css.map */

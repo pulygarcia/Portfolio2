@@ -69,7 +69,7 @@
         </header>
 
         <section class="container">
-            <div class="principal">
+            <div class="principal fadeInUp">
                 <article class="principal__contenido">
                     <div class="principal__heading">
                         <h1>FrontEnd developer.<span class="principal__escribiendo">|</span></h1>
@@ -118,7 +118,7 @@
                     <img class="proyectos__card-imagen" src="img/pacientes-propio-cap.PNG" alt="proyecto imagen">
                 </div>
 
-                <h4 class="proyectos__card-heading">Administrador pacientes LocalStorage</h4>
+                <h4 class="proyectos__card-heading">Administrador pacientes LS</h4>
 
                 <p class="proyectos__card-tecnologias"><span>Tecnologías: </span> CSS - Javascript POO - HTML</p>
 
@@ -236,23 +236,18 @@
 
             <article class="proyectos__card">
                 <div>
-                    <img class="proyectos__card-imagen" src="img/weather-cap.PNG" alt="proyecto imagen">
+                    <img class="proyectos__card-imagen" src="img/first-react-cap.PNG" alt="proyecto imagen">
                 </div>
 
-                <h4 class="proyectos__card-heading">Versión de App del clima JS</h4>
+                <h4 class="proyectos__card-heading">Cotizador de préstamo</h4>
 
-                <p class="proyectos__card-tecnologias"><span>Tecnologías: </span> CSS - Javascript - HTML</p>
+                <p class="proyectos__card-tecnologias"><span>Tecnologías: </span> React.js - Tailwindcss</p>
 
                 <div class="proyectos__card-botones">
-                    <a href="https://weather-app-version-puly.netlify.app" target="_blank">Visualizar
+                    <a href="https://prestamos-first-react.netlify.app" target="_blank">Visualizar
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
                             <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
                           </svg>
-                    </a>
-                    <a href="https://github.com/pulygarcia/Weather-app-version">Repositorio
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
                     </a>
                 </div>
 
@@ -281,6 +276,10 @@
                 <div class="conocimientos__item bootstrap">
                     <img class="conocimientos__item-img" src="img/bootstrap-icon.svg" alt="icon">
                     <p class="conocimientos__item-name">Bootstrap</p>
+                </div>
+                <div class="conocimientos__item tailwind">
+                    <img class="conocimientos__item-img" src="img/file_type_tailwind_icon_130128.svg" alt="icon">
+                    <p class="conocimientos__item-name">Tailwindcss</p>
                 </div>
                 <div class="conocimientos__item html">
                     <img class="conocimientos__item-img" src="img/html-icon.svg" alt="icon">
@@ -323,42 +322,53 @@
                 <div class="sobre-mi__contenido">
                     <h3 class="sobre-mi__titulo">¡Hola! Soy <span>José Ignacio</span></h3>
                     <p class="sobre-mi__texto">Siempre he tenido curiosidad sobre como funciona la tecnología y por eso la <span>programación</span> me apasiona. Me considero una persona abierta a escuchar opiniones diferentes a las mías, y siempre estoy dispuesto a recibir críticas constructivas para mejorar mis proyectos. Me gusta el trabajo en equipo y la colaboración mutua.</p>
-                    <p class="sobre-mi__texto">Fuera del mundo de la tecnología, dedico parte de mi tiempo a estudiar inglés, ya que considero que es fundamental. También disfruto compartiendo momentos con mis seres queridos, y practicando deportes como el pádel y algo de tenis para mantenerme activo.</p>
+                    <p class="sobre-mi__texto">Fuera del mundo de la tecnología, dedico parte de mi tiempo a practicar deportes como tenis y pádel y a estudiar inglés, ya que considero que es fundamental. También disfruto compartiendo momentos con mis seres queridos y familia.</p>
                 </div>
             </div>
 
-            <div class="contacto" id="contacto">
-                <h2 class="contacto__heading">Contactame</h2>
-
-                <p class="contacto__texto">¡Podrás encontrarme aquí!</p>
-
-                <div class="contacto__redes">
-                    <a href="https://wa.me/3815429673?text=Hola Vengo desde tu portfolio. " target="_blank">
-                        <article class="contacto__red">
-                            <img class="contacto__red-imagen" src="img/iconfinder-social-media-applications-23whatsapp-4102606_113811.svg" alt="whatsapp logo">
-                        </article>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jose-ignacio-robledo-puly-008661239/" target="_blank">
-                        <article class="contacto__red">
-                            <img class="contacto__red-imagen" src="img/in_linked_linkedin_media_social_icon_124259.svg" alt="linkedin logo">
-                        </article>
-                    </a>
-                    <a href="https://github.com/pulygarcia" target="_blank">
-                        <article class="contacto__red">
-                            <img class="contacto__red-imagen" src="img/Github-Icon_icon-icons.com_52888.png" alt="linkedin logo">
-                        </article>
-                    </a>
-                    <a href="https://www.instagram.com/puly___garcia/" target="_blank">
-                        <article class="contacto__red">
-                            <img class="contacto__red-imagen" src="img/iconfinder-social-media-applications-3instagram-4102579_113804.svg" alt="Instagram logo">
-                        </article>
-                    </a>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-
+<div class="contacto" id="contacto">
+    <div class="contacto__contenido">
+        <h2 class="contacto__heading">Contactame</h2>
+        <p class="contacto__texto">¡Espero te haya gustado mi portfolio!</p>
+        <p class="contacto__texto">Podrás encontrarme en estas redes para contactar conmigo</p>
+        <div class="contacto__redes">
+            <a href="https://wa.me/3815429673?text=Hola Vengo desde tu portfolio. " target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contacto__icono  wsp icon icon-tabler icon-tabler-brand-whatsapp" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jose-ignacio-robledo-puly-008661239/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="contacto__icono linkedin icon icon-tabler icon-tabler-brand-linkedin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                <path d="M8 11l0 5" />
+                <path d="M8 8l0 .01" />
+                <path d="M12 16l0 -5" />
+                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+            </svg>
+            </a>
+            <a href="https://github.com/pulygarcia" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contacto__icono github icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/puly___garcia/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contacto__icono insta icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+            </a>
+    </div>
+    </div>
     <script src="js/app.js"></script>
 </body>
 </html>
