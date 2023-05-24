@@ -305,22 +305,18 @@ main {
 }
 
 .flotantes {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 1rem;
+  display: none;
 }
 @media (min-width: 1024px) {
   .flotantes {
+    position: fixed;
     left: 0;
     top: 50%;
     bottom: 50%;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
   }
 }
 .flotantes__imagen {
@@ -573,7 +569,7 @@ main {
   }
 }
 .sobre-mi span {
-  color: #5edf5e;
+  color: #35e1c5;
 }
 .sobre-mi__heading {
   text-align: center;
@@ -611,11 +607,11 @@ main {
   }
 }
 .sobre-mi__imagen {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
-  border-radius: 3rem;
-  box-shadow: #5edf5e 8px 3px 15px 1px;
+  border-radius: 50%;
+  box-shadow: #35e1c5 8px 3px 15px 1px;
   animation-name: latido;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -661,17 +657,17 @@ main {
   gap: 3rem;
 }
 .contacto__red {
-  padding: 2rem;
-  border-radius: 50%;
+  padding: 1rem;
+  border-radius: 1rem;
   background-color: black;
   border: 1px solid rgb(54, 244, 220);
-}
-.contacto__red-imagen {
-  width: 8rem;
-  border-radius: 50%;
   animation-name: latido;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+.contacto__red-imagen {
+  width: 8rem;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=app.css.map */
