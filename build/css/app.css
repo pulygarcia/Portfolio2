@@ -343,6 +343,43 @@ main {
   }
 }
 
+/*BOTON ANIMADO*/
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: rgb(244, 54, 54);
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  cursor: pointer;
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+/*FLOTANTES*/
 .flotantes {
   display: none;
 }
@@ -728,5 +765,17 @@ main {
 .github:hover{
   stroke: #701085;
 }
+
+
+
+/* === removing default button style ===*/
+.button {
+  margin: 1.3rem 0 0 0 ;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
 
 /*# sourceMappingURL=app.css.map */
