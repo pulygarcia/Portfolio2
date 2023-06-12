@@ -180,7 +180,7 @@ main {
   }
 }
 .header__logo {
-  font-family: "Bruno Ace SC", cursive;
+  font-family: "Bruno Ace SC", system-ui;
   color: #fff;
   font-weight: 700;
   font-size: 2.5rem;
@@ -420,23 +420,22 @@ main {
   background-size: cover;
 }
 .proyectos__heading {
-  font-family: "Bruno Ace SC", cursive;
+  font-family: "Bruno Ace SC", system-ui;
   color: #fff;
   text-shadow: 2px 5px 2px #2828cd;
 }
 .proyectos__grid {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
 }
 .proyectos__card {
   background-color: rgb(0 0 0 / 30%);
   border-radius: .5rem;
-  border: 1px solid transparent;
-  box-shadow: #2e2c3b 0px 0px 10px 3px;
-  cursor: pointer;
   transition: 0.2s ease;
-  overflow: hidden;
+}
+.proyectos__card:hover{
+  box-shadow: #6453d6 15px 15px 10px 2px;
 }
 @media (min-width: 768px){
     .proyectos__card{
@@ -458,12 +457,6 @@ main {
   }
 }
 
-.proyectos__card-imagen {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: 0.2s ease;
-}
 .proyectos__card-heading {
   font-size: 2rem;
   margin: 1.3rem 0;
@@ -534,7 +527,7 @@ button {
   background-size: cover;
 }
 .conocimientos__heading {
-  font-family: "Bruno Ace SC", cursive;
+  font-family: "Bruno Ace SC", system-ui;
   text-shadow: 2px 5px 2px rgb(255, 115, 0);
 }
 .conocimientos__texto {
@@ -631,7 +624,7 @@ button {
 
 .estudios__heading {
   color: #fff;
-  font-family: "Bruno Ace SC", cursive;
+  font-family: "Bruno Ace SC", system-ui;
   text-shadow: 2px 5px 2px #aeae0c;
 }
 .estudios__grid {
@@ -678,7 +671,7 @@ button {
 }
 .sobre-mi__heading {
   color: #fff;
-  font-family: "Bruno Ace SC", cursive;
+  font-family: "Bruno Ace SC", system-ui;
   text-shadow: 2px 5px 2px #20a190;
 }
 .sobre-mi__grid {
@@ -733,7 +726,7 @@ button {
   background-color: rgb(5, 5, 5);
 }
 .contacto__heading {
-  font-family: "Bruno Ace SC", cursive;
+  font-family: "Bruno Ace SC", system-ui;
   text-align: center;
   text-shadow: 2px 5px 2px #4d4747;
 }
