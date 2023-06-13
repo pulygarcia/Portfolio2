@@ -146,7 +146,7 @@ h2 {
     h2{
       font-size: 5rem;
       text-align: left;
-      margin: 10rem 0;
+      margin: 6rem 0;
     }
 }
 
@@ -471,6 +471,7 @@ main {
   background-color: #2828cd;
   box-shadow: 3px 3px;
   margin: 0 0.2rem;
+  transition: .2s ease;
 }
 .proyectos__card-texto{
   color: rgba(255,255,255,0.6);
@@ -526,6 +527,11 @@ button {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../img/conocimientos-bg-nuevo.jpg");
   background-size: cover;
 }
+@media (min-width: 1200px){
+  .conocimientos{
+    height: 100vh;
+  }
+  }
 .conocimientos__heading {
   font-family: "Bruno Ace SC", system-ui;
   text-shadow: 2px 5px 2px rgb(255, 115, 0);
@@ -568,58 +574,58 @@ button {
 
 /*colores tecnologias*/
 .javascript {
-  box-shadow: yellow 1px 1px 30px 0px;
+  box-shadow: yellow 1px 1px 15px 0px;
   transition: 0.2s ease;
 }
 .javascript:hover {
-  box-shadow: yellow 1px 1px 60px 0px;
+  box-shadow: yellow 1px 1px 30px 0px;
 }
 
 .css {
-  box-shadow: blue 1px 1px 30px 0px;
+  box-shadow: blue 1px 1px 15px 0px;
   transition: 0.2s ease;
 }
 .css:hover {
-  box-shadow: blue 1px 1px 60px 0px;
+  box-shadow: blue 1px 1px 30px 0px;
 }
 
 .sass {
-  box-shadow: #e52f4e 1px 1px 30px 0px;
+  box-shadow: #e52f4e 1px 1px 15px 0px;
   transition: 0.2s ease;
 }
 .sass:hover {
-  box-shadow: #e52f4e 1px 1px 60px 0px;
+  box-shadow: #e52f4e 1px 1px 30px 0px;
 }
 
 .bootstrap {
-  box-shadow: #942e94 1px 1px 30px 0px;
+  box-shadow: #942e94 1px 1px 15px 0px;
   transition: 0.2s ease;
 }
 .bootstrap:hover {
-  box-shadow: #942e94 1px 1px 60px 0px;
+  box-shadow: #942e94 1px 1px 30px 0px;
 }
 
 .tailwind {
-  box-shadow: #0d96c0 1px 1px 30px 0px;
+  box-shadow: #0d96c0 1px 1px 15px 0px;
   transition: 0.2s ease;
 }
 .tailwind:hover {
-  box-shadow: #0d96c0 1px 1px 60px 0px;
+  box-shadow: #0d96c0 1px 1px 30px 0px;
 }
 
 .html {
-  box-shadow: orange 1px 1px 30px 0px;
+  box-shadow: orange 1px 1px 15px 0px;
   transition: 0.2s ease;
 }
 .html:hover {
-  box-shadow: orange 1px 1px 60px 0px;
+  box-shadow: orange 1px 1px 30px 0px;
 }
 
 .git{
-  box-shadow: rgb(255, 115, 0) 1px 1px 30px 0px;
+  box-shadow: rgb(255, 115, 0) 1px 1px 15px 0px;
 }
 .git:hover{
-  box-shadow: rgb(255, 115, 0) 1px 1px 60px 0px;
+  box-shadow: rgb(255, 115, 0) 1px 1px 30px 0px;
 }
 
 .estudios__heading {
@@ -661,9 +667,10 @@ button {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../img/sobre-mi-bg.jpg");
   background-size: cover;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .sobre-mi {
     text-align: left;
+    height: 100vh;
   }
 }
 .sobre-mi span {
@@ -722,22 +729,26 @@ button {
 
 .contacto {
   padding: 5rem 0;
-  color: #fff;
-  background-color: rgb(5, 5, 5);
+  background-color: #fff;
+}
+@media (min-width: 1200px){
+    .contacto{
+      height: 100vh;
+    }
 }
 .contacto__heading {
   font-family: "Bruno Ace SC", system-ui;
   text-align: center;
-  text-shadow: 2px 5px 2px #4d4747;
+  text-shadow: 2px 5px 2px #28eca2;
+  color: #000000;
 }
-.contacto__heading::after {
-  content: "";
-  width: 15rem;
-  height: 15rem;
-  display: block;
-  background-image: url("../../../img/sobre-mi-icon.svg");
-  background-size: cover;
+.contacto__imagen{
+  width: 35rem;
   margin: 0 auto;
+  animation-name: radius;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  box-shadow: #28eca2 8px 3px 15px 1px;
 }
 .contacto__texto {
   margin: 1rem 0;
