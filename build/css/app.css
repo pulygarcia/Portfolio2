@@ -16,7 +16,7 @@ body {
   font-size: 1.6rem;
   padding: 0;
   margin: 0;
-  background-color: rgb(5, 5, 5);
+  background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
 }
 
 img {
@@ -331,27 +331,6 @@ main {
   color: rgb(244, 54, 54);
   font-weight: 700;
 }
-.principal__boton {
-  background-color: rgba(0, 0, 0, 0.7411764706);
-  border: 1px solid rgb(244, 54, 54);
-  font-size: 1.8rem;
-  color: #fff;
-  margin: 1rem 0;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  padding: 1rem 3rem;
-  display: inline-block;
-}
-.principal__boton:hover {
-  background-image: linear-gradient(to right, #fd6823 0%, #cc2323 50%, #f14040 100%);
-  border: 1px solid rgba(0, 0, 0, 0.7411764706);
-}
-@media (min-width: 410px) {
-  .principal__boton {
-    font-size: 2rem;
-    margin: 2rem 0;
-  }
-}
 
 /*BOTON PRINCIPAL*/
 .button {
@@ -413,16 +392,25 @@ main {
   transform: scale(1.1);
 }
 
+.contenedor-heading{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.separador{
+  height: 1px;
+  width: 100%;
+  background-color: #6453d6;
+}
+
 .proyectos {
   padding: 5rem 0;
   color: #fff;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../img/proyectos-bg.jpg");
-  background-size: cover;
 }
 .proyectos__heading {
   font-family: "Bruno Ace SC", system-ui;
   color: #fff;
-  text-shadow: 2px 5px 2px #2828cd;
 }
 .proyectos__grid {
   display: flex;
@@ -451,6 +439,7 @@ main {
   flex-direction: column;
   gap: 3rem;
   text-align: center;
+  background-color: #0c0c0b;
 }
 @media (min-width: 768px){
   .proyectos__card-contenido{
@@ -525,8 +514,6 @@ button {
 
 .conocimientos {
   padding: 5rem 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../img/conocimientos-bg-nuevo.jpg");
-  background-size: cover;
 }
 @media (min-width: 1200px){
   .conocimientos{
@@ -535,7 +522,6 @@ button {
   }
 .conocimientos__heading {
   font-family: "Bruno Ace SC", system-ui;
-  text-shadow: 2px 5px 2px rgb(255, 115, 0);
 }
 .conocimientos__texto {
   color: #fff;
@@ -555,7 +541,7 @@ button {
 .conocimientos__item {
   padding: 1rem;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: #0c0c0b;
 }
 .conocimientos__item-img {
   width: 5rem;
@@ -577,63 +563,97 @@ button {
 .javascript {
   transition: 0.2s ease;
 }
-.javascript:hover {
-  box-shadow: yellow 15px 15px 15px 0px;
-  transform: scale(.9);
+.javascript {
+  box-shadow: yellow 10px 10px 10px 0px;
 }
 
 .css {
   transition: 0.2s ease;
 }
-.css:hover {
-  box-shadow: blue 15px 15px 15px 0px;
-  transform: scale(.9);
+.css {
+  box-shadow: blue 10px 10px 10px 0px;
 }
 
 .sass {
   transition: 0.2s ease;
 }
-.sass:hover {
-  box-shadow: #e52f4e 15px 15px 15px 0px;
-  transform: scale(.9);
+.sass {
+  box-shadow: #e52f4e 10px 10px 10px 0px;
 }
 
 .bootstrap {
   transition: 0.2s ease;
 }
-.bootstrap:hover {
-  box-shadow: #942e94 15px 15px 15px 0px;
-  transform: scale(.9);
+.bootstrap {
+  box-shadow: #942e94 10px 10px 10px 0px;
 }
 
 .tailwind {
   transition: 0.2s ease;
 }
-.tailwind:hover {
-  box-shadow: #0d96c0 15px 15px 15px 0px;
-  transform: scale(.9);
+.tailwind {
+  box-shadow: #0d96c0 10px 10px 10px 0px;
 }
 
 .html {
   transition: 0.2s ease;
 }
-.html:hover {
-  box-shadow: orange 15px 15px 15px 0px;
-  transform: scale(.9);
+.html {
+  box-shadow: orange 10px 10px 10px 0px;
 }
 
 .git{
   transition: .2s ease;
 }
-.git:hover{
-  box-shadow: rgb(255, 115, 0) 15px 15px 15px 0px;
-  transform: scale(.9);
+.git{
+  box-shadow: rgb(255, 115, 0) 10px 10px 10px 0px;
 }
+
+/*MQ item tecnologias mobile*/
+@media (min-width: 768px){
+  .javascript,
+  .css,
+  .sass,
+  .bootstrap,
+  .tailwind,
+  .html,
+  .git{
+    box-shadow: none;
+  }
+  .javascript:hover{
+    box-shadow: yellow 10px 10px 10px 0px;
+    transform: scale(.9);
+  }
+  .css:hover{
+    box-shadow: blue 10px 10px 10px 0px;
+    transform: scale(.9);
+  }
+  .sass:hover{
+    box-shadow: #e52f4e 10px 10px 10px 0px;
+    transform: scale(.9);
+  }
+  .bootstrap:hover{
+    box-shadow: #942e94 10px 10px 10px 0px;
+    transform: scale(.9);
+  }
+  .tailwind:hover{
+    box-shadow: #0d96c0 10px 10px 10px 0px;
+    transform: scale(.9);
+  }
+  .html:hover{
+    box-shadow: orange 10px 10px 10px 0px;
+    transform: scale(.9);
+  }
+  .git:hover{
+    box-shadow: rgb(255, 115, 0) 10px 10px 10px 0px;
+    transform: scale(.9);
+  }
+}
+
 
 .estudios__heading {
   color: #fff;
   font-family: "Bruno Ace SC", system-ui;
-  text-shadow: 2px 5px 2px #aeae0c;
 }
 .estudios__grid {
   display: flex;
@@ -647,7 +667,7 @@ button {
   }
 }
 .estudios__item {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: #0c0c0b;
   padding: 3rem;
   border-radius: 1rem;
 }
@@ -665,8 +685,6 @@ button {
   padding: 5rem 0;
   color: #fff;
   text-align: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../img/sobre-mi-bg.jpg");
-  background-size: cover;
 }
 @media (min-width: 1200px) {
   .sobre-mi {
@@ -675,12 +693,11 @@ button {
   }
 }
 .sobre-mi span {
-  color: #35e1c5;
+  color: #6453d6;
 }
 .sobre-mi__heading {
   color: #fff;
   font-family: "Bruno Ace SC", system-ui;
-  text-shadow: 2px 5px 2px #20a190;
 }
 .sobre-mi__grid {
   display: flex;
@@ -708,7 +725,7 @@ button {
   height: 20rem;
   object-fit: cover;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  box-shadow: #35e1c5 8px 3px 15px 1px;
+  box-shadow: #6453d6 8px 3px 15px 1px;
   animation-name: radius;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -730,7 +747,6 @@ button {
 
 .contacto {
   padding: 5rem 0;
-  background-color: #fff;
 }
 @media (min-width: 1200px){
     .contacto{
@@ -740,8 +756,6 @@ button {
 .contacto__heading {
   font-family: "Bruno Ace SC", system-ui;
   text-align: center;
-  text-shadow: 2px 5px 2px #28eca2;
-  color: #000000;
 }
 .contacto__imagen{
   width: 35rem;
@@ -749,12 +763,12 @@ button {
   animation-name: radius;
   animation-duration: 7s;
   animation-iteration-count: infinite;
-  box-shadow: #28eca2 8px 3px 15px 1px;
 }
 .contacto__texto {
   margin: 1rem 0;
   font-size: 2rem;
   text-align: center;
+  color: #fff;
 }
 .contacto__redes {
   display: flex;
@@ -768,8 +782,6 @@ button {
   box-shadow: 0px 0px 10px 1px rgb(122, 122, 121);
   border-radius: 50%;
   transition: .2s ease;
-}
-.contacto__icono:hover{
   stroke: #fff;
 }
 
