@@ -283,6 +283,10 @@ main {
 @media (min-width: 1024px) {
   .principal__imagen img {
     width: 22rem;
+    transition: .2s ease;
+  }
+  .principal__imagen img:hover{
+    filter: drop-shadow(0 0 4em rgb(244, 54, 54));
   }
 }
 .principal__heading {
