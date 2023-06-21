@@ -16,7 +16,8 @@ body {
   font-size: 1.6rem;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../../img/bg-inicio.jpg");
+  /*background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));*/
 }
 
 img {
@@ -157,8 +158,6 @@ h3 {
 main {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../../img/bg-inicio.jpg");
-  background-size: cover;
 }
 
 .header__barra {
@@ -410,7 +409,6 @@ main {
 }
 .proyectos__heading {
   font-family: "Bruno Ace SC", system-ui;
-  color: #fff;
 }
 .proyectos__grid {
   display: flex;
@@ -424,7 +422,7 @@ main {
 }
 .proyectos__card:hover{
   box-shadow: #6453d6 15px 15px 15px 0px;
-  transform: scale(.9);
+  scale: .9;
 }
 @media (min-width: 768px){
     .proyectos__card{
@@ -622,31 +620,31 @@ button {
   }
   .javascript:hover{
     box-shadow: yellow 10px 10px 10px 0px;
-    transform: scale(.9);
+    scale: .9;
   }
   .css:hover{
     box-shadow: blue 10px 10px 10px 0px;
-    transform: scale(.9);
+    scale: .9;
   }
   .sass:hover{
     box-shadow: #e52f4e 10px 10px 10px 0px;
-    transform: scale(.9);
+    scale: .9;
   }
   .bootstrap:hover{
     box-shadow: #942e94 10px 10px 10px 0px;
-    transform: scale(.9);
+    scale: .9;
   }
   .tailwind:hover{
     box-shadow: #0d96c0 10px 10px 10px 0px;
-    transform: scale(.9);
+    scale: .9;
   }
   .html:hover{
     box-shadow: orange 10px 10px 10px 0px;
-    transform: scale(.9);
+    scale: .9;
   }
   .git:hover{
     box-shadow: rgb(255, 115, 0) 10px 10px 10px 0px;
-    transform: scale(.9);
+    scale: .9;
   }
 }
 
@@ -694,6 +692,7 @@ button {
 }
 .sobre-mi span {
   color: #6453d6;
+  font-weight: 700;
 }
 .sobre-mi__heading {
   color: #fff;
