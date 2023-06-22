@@ -275,6 +275,9 @@ main {
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
+.principal__imagen img:hover{
+  filter: drop-shadow(0 0 4em rgb(244, 54, 54));
+}
 @media (min-width: 410px) {
   .principal__imagen img {
     width: 15rem;
@@ -284,9 +287,6 @@ main {
   .principal__imagen img {
     width: 22rem;
     transition: .2s ease;
-  }
-  .principal__imagen img:hover{
-    filter: drop-shadow(0 0 4em rgb(244, 54, 54));
   }
 }
 .principal__heading {
@@ -517,11 +517,6 @@ button {
 .conocimientos {
   padding: 5rem 0;
 }
-@media (min-width: 1200px){
-  .conocimientos{
-    height: 100vh;
-  }
-  }
 .conocimientos__heading {
   font-family: "Bruno Ace SC", system-ui;
 }
@@ -662,25 +657,20 @@ button {
   flex-direction: column;
   gap: 2rem;
 }
-@media (min-width: 768px) {
-  .estudios__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 .estudios__item {
   background-color: #0c0c0b;
   padding: 3rem;
   border-radius: 1rem;
-}
-.estudios__item-img {
-  width: 8rem;
-  margin: 0 auto;
-}
-.estudios__item-texto {
   color: #fff;
-  text-align: center;
+}
+.estudios__item-heading{
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #6453d6;
+}
+.estudios__item li{
   font-size: 1.8rem;
+  margin-top: 2rem;
 }
 
 .sobre-mi {
@@ -691,7 +681,6 @@ button {
 @media (min-width: 1200px) {
   .sobre-mi {
     text-align: left;
-    height: 100vh;
   }
 }
 .sobre-mi span {
