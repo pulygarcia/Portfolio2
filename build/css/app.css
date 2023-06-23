@@ -83,6 +83,23 @@ img {
   }
 }
 
+@keyframes eyemove {
+  0% {
+    left: 30px;
+    background-color: #2828cd;
+  }
+
+  50% {
+    left: 43px;
+    background-color: #2828cd;
+  }
+
+  100% {
+    left: 30px;
+    background-color: #2828cd;
+  }
+}
+
 
 .hidden{
   visibility: hidden;
@@ -501,7 +518,7 @@ button {
   text-shadow: 0 0 5px #ffffff, 0 0 0px #ffffff, 0 0 17px #ffffff;
 }
 
-#btn:hover,:focus {
+#btn:hover {
   color: #ffffff;
   background: rgb(55, 54, 244);
   border: 1px solid rgb(55, 54, 244);
@@ -749,17 +766,81 @@ button {
   font-family: "Bruno Ace SC", system-ui;
   text-align: center;
 }
-.contacto__imagen{
-  width: 35rem;
+.contacto__contenedor-formulario{
+  max-width: 60rem;
   margin: 0 auto;
-  animation-name: radius;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
+  background-color: #0c0c0b;
+  border-radius: 2rem;
+  padding: 3rem;
+  box-shadow: 15px 15px 5px #2828cd;
 }
-.contacto__texto {
-  margin: 1rem 0;
-  font-size: 2rem;
-  text-align: center;
+
+/*OJO*/
+.eye {
+  width: 100px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.up {
+  position: absolute;
+  top: 0px;
+  height: 100px;
+  width: 100px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(247, 243, 243) transparent transparent transparent;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.down {
+  position: absolute;
+  top: -70px;
+  height: 100px;
+  width: 100px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent transparent rgb(230, 227, 227) transparent;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.mid {
+  position: absolute;
+  top: 1px;
+  left: 39px;
+  width: 27px;
+  height: 27px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 0;
+  animation: eyemove 4s infinite;
+}
+
+/*FIN OJO*/
+.contacto__formulario-campo{
+  padding: 2rem 0;
+}
+.contacto__input {
+  background-color: #212121;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.8rem;
+}
+
+.contacto__input:focus {
+  background-color: #212121;
+  box-shadow: none;
+  transition: .2s ease;
+  scale: .9;
+  box-shadow: 5px 5px 2px #2828cd;
+  outline: none;
   color: #fff;
 }
 .contacto__redes {
