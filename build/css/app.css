@@ -441,17 +441,12 @@ main {
   border-radius: .5rem;
   transition: 0.2s ease;
 }
-.proyectos__card:hover{
-  box-shadow: #6453d6 15px 15px 15px 0px;
-  scale: .9;
-}
 @media (min-width: 768px){
     .proyectos__card{
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
 }
-
 .proyectos__card-contenido{
   padding: 2rem;
   display: flex;
@@ -540,7 +535,7 @@ button {
 .conocimientos__texto {
   color: #fff;
   margin: 3rem 0;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 .conocimientos__grid {
   display: grid;
@@ -555,16 +550,37 @@ button {
 .conocimientos__item {
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #0c0c0b;
 }
 .conocimientos__item-img {
   width: 5rem;
   margin: 0 auto;
+  transition: .2s ease-in-out;
 }
 @media (min-width: 768px){
     .conocimientos__item-img{
       width: 8rem;
     }
+}
+.html:hover{
+  filter: drop-shadow(0px 0px 30px orange);
+}
+.javascript:hover{
+  filter: drop-shadow(0px 0px 30px rgb(190, 190, 50));
+}
+.css:hover{
+  filter: drop-shadow(0px 0px 30px rgb(0, 153, 255));
+}
+.git:hover{
+  filter: drop-shadow(0px 0px 30px rgb(255, 81, 0));
+}
+.tailwind:hover{
+  filter: drop-shadow(0px 0px 30px rgb(42, 184, 172));
+}
+.sass:hover{
+  filter: drop-shadow(0px 0px 30px rgb(227, 116, 241));
+}
+.bootstrap:hover{
+  filter: drop-shadow(0px 0px 30px rgb(146, 16, 158));
 }
 .conocimientos__item-name {
   color: #fff;
@@ -572,99 +588,6 @@ button {
   font-size: 2rem;
   margin-top: 1rem;
 }
-
-/*colores tecnologias*/
-.javascript {
-  transition: 0.2s ease;
-}
-.javascript {
-  box-shadow: yellow 10px 10px 10px 0px;
-}
-
-.css {
-  transition: 0.2s ease;
-}
-.css {
-  box-shadow: blue 10px 10px 10px 0px;
-}
-
-.sass {
-  transition: 0.2s ease;
-}
-.sass {
-  box-shadow: #e52f4e 10px 10px 10px 0px;
-}
-
-.bootstrap {
-  transition: 0.2s ease;
-}
-.bootstrap {
-  box-shadow: #942e94 10px 10px 10px 0px;
-}
-
-.tailwind {
-  transition: 0.2s ease;
-}
-.tailwind {
-  box-shadow: #0d96c0 10px 10px 10px 0px;
-}
-
-.html {
-  transition: 0.2s ease;
-}
-.html {
-  box-shadow: orange 10px 10px 10px 0px;
-}
-
-.git{
-  transition: .2s ease;
-}
-.git{
-  box-shadow: rgb(255, 115, 0) 10px 10px 10px 0px;
-}
-
-/*MQ item tecnologias mobile*/
-@media (min-width: 768px){
-  .javascript,
-  .css,
-  .sass,
-  .bootstrap,
-  .tailwind,
-  .html,
-  .git{
-    box-shadow: none;
-  }
-  .javascript:hover{
-    box-shadow: yellow 10px 10px 10px 0px;
-    scale: .9;
-  }
-  .css:hover{
-    box-shadow: blue 10px 10px 10px 0px;
-    scale: .9;
-  }
-  .sass:hover{
-    box-shadow: #e52f4e 10px 10px 10px 0px;
-    scale: .9;
-  }
-  .bootstrap:hover{
-    box-shadow: #942e94 10px 10px 10px 0px;
-    scale: .9;
-  }
-  .tailwind:hover{
-    box-shadow: #0d96c0 10px 10px 10px 0px;
-    scale: .9;
-  }
-  .html:hover{
-    box-shadow: orange 10px 10px 10px 0px;
-    scale: .9;
-  }
-  .git:hover{
-    box-shadow: rgb(255, 115, 0) 10px 10px 10px 0px;
-    scale: .9;
-  }
-}
-
-
 .estudios__heading {
   color: #fff;
   font-family: "Bruno Ace SC", system-ui;
@@ -772,7 +695,7 @@ button {
   background-color: #0c0c0b;
   border-radius: 2rem;
   padding: 3rem;
-  box-shadow: 15px 15px 5px #2828cd;
+  box-shadow: 12px 12px 5px #2828cd;
 }
 
 /*OJO*/
