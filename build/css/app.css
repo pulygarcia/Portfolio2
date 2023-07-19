@@ -468,6 +468,9 @@ main {
 .proyectos__card-tecnologias {
   font-weight: 700;
   font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .proyectos__card-tecnologias span{
   padding: 0.5rem 1rem;
