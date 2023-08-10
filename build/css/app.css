@@ -12,6 +12,27 @@ html {
   box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #000000;
+}
+
+/* Estilo del "pulgar" (la parte del scrollbar que se puede arrastrar) */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(244, 54, 54);
+  border-radius: 5px;
+}
+
+/* Estilo del "pulgar" cuando está siendo arrastrado */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(244, 54, 54);
+}
+
+/* Estilo del "pulgar" cuando está en la parte superior o inferior del scrollbar */
+::-webkit-scrollbar-thumb:vertical {
+  background-color: rgb(244, 54, 54);
+}
+
 body {
   font-size: 1.6rem;
   padding: 0;
