@@ -588,6 +588,12 @@ button {
 .vue:hover{
   filter: drop-shadow(0px 0px 30px rgb(24, 158, 69));
 }
+.pinia:hover{
+  filter: drop-shadow(0px 0px 30px rgb(170, 216, 3));
+}
+.firebase:hover{
+  filter: drop-shadow(0px 0px 30px rgb(216, 149, 3));
+}
 .conocimientos__item-name {
   color: #fff;
   text-align: center;
