@@ -457,11 +457,6 @@ main {
   flex-direction: column;
   gap: 6rem;
 }
-.proyectos__card {
-  background-color: rgb(0 0 0 / 30%);
-  border-radius: .5rem;
-  transition: 0.2s ease;
-}
 @media (min-width: 768px){
     .proyectos__card{
       display: grid;
@@ -474,7 +469,7 @@ main {
   flex-direction: column;
   gap: 3rem;
   text-align: center;
-  background-color: #0c0c0b;
+  background-color: #11110f;
 }
 @media (min-width: 768px){
   .proyectos__card-contenido{
@@ -631,7 +626,7 @@ button {
   gap: 2rem;
 }
 .estudios__item {
-  background-color: #0c0c0b;
+  background-color: #11110f;
   padding: 3rem;
   border-radius: 1rem;
   color: #fff;
@@ -713,85 +708,63 @@ button {
 .contacto {
   padding: 5rem 0;
 }
-@media (min-width: 1200px){
-    .contacto{
-      height: 100vh;
-    }
-}
 .contacto__heading {
   font-family: "Bruno Ace SC", system-ui;
   text-align: center;
 }
-.contacto__contenedor-formulario{
-  max-width: 60rem;
-  margin: 0 auto;
-  background-color: #0c0c0b;
+.contacto__contenido{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (min-width: 768px){
+    .contacto__contenido{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+}
+.contacto__info{
+  background-color: #11110f;
+  padding: 2rem;
   border-radius: 2rem;
-  padding: 3rem;
-  box-shadow: 12px 12px 5px #2828cd;
+  color: #fff;
+  text-align: center;
 }
-
-/*OJO*/
-.eye {
-  width: 100px;
-  height: 60px;
-  position: relative;
-  z-index: 1;
+.contacto__info img{
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
   margin: 0 auto;
-}
-
-.up {
-  position: absolute;
-  top: 0px;
-  height: 100px;
-  width: 100px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(247, 243, 243) transparent transparent transparent;
   border-radius: 50%;
-  z-index: 1;
+  margin-top: -8rem;
+  border: 1px solid #6453d6;
 }
-
-.down {
-  position: absolute;
-  top: -70px;
-  height: 100px;
-  width: 100px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: transparent transparent rgb(230, 227, 227) transparent;
-  border-radius: 50%;
-  z-index: 1;
+.contacto__info p{
+  font-weight: 700;
+  margin: 2rem 0;
 }
-
-.mid {
-  position: absolute;
-  top: 1px;
-  left: 39px;
-  width: 27px;
-  height: 27px;
-  border: none;
-  border-radius: 50%;
-  background-color: black;
-  z-index: 0;
-  animation: eyemove 4s infinite;
+.contacto__info span{
+  font-weight: normal;
 }
-
-/*FIN OJO*/
+.contacto__info a{
+  color:#6453d6;
+  text-decoration: underline;
+}
 .contacto__formulario-campo{
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .contacto__input {
-  background-color: #212121;
+  background-color: #11110f;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.6rem;
   border-radius: 5px;
   border: none;
   font-size: 1.8rem;
 }
 
 .contacto__input:focus {
-  background-color: #212121;
+  background-color: #171716;
   box-shadow: none;
   transition: .2s ease;
   scale: .9;
