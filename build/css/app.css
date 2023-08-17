@@ -81,17 +81,6 @@ img {
     transform: translateY(0);
   }
 }
-@keyframes latido {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes radius {
   0%{
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -104,21 +93,11 @@ img {
   }
 }
 
-@keyframes eyemove {
-  0% {
-    left: 30px;
-    background-color: #2828cd;
-  }
-
-  50% {
-    left: 43px;
-    background-color: #2828cd;
-  }
-
-  100% {
-    left: 30px;
-    background-color: #2828cd;
-  }
+.radius{
+  box-shadow: #6453d6 8px 3px 15px 1px;
+  animation-name: radius;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
 }
 
 
@@ -685,10 +664,6 @@ button {
   height: 20rem;
   object-fit: cover;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  box-shadow: #6453d6 8px 3px 15px 1px;
-  animation-name: radius;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
 }
 .sobre-mi__texto {
   margin-top: 1.5rem;
@@ -721,7 +696,8 @@ button {
 @media (min-width: 768px){
     .contacto__contenido{
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
     }
 }
 .contacto__info{
@@ -738,7 +714,6 @@ button {
   margin: 0 auto;
   border-radius: 50%;
   margin-top: -8rem;
-  border: 1px solid #6453d6;
 }
 .contacto__info p{
   font-weight: 700;

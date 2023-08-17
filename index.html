@@ -351,7 +351,7 @@
             </div>
 
             <div class="sobre-mi__grid hidden">
-                <img class="sobre-mi__imagen" src="img/perfil-nuevo.jpeg" alt="Imagen de José ignacio">
+                <img class="sobre-mi__imagen radius" src="img/perfil-contacto.jpeg" alt="Imagen de José ignacio">
 
                 <div class="sobre-mi__contenido hidden">
                     <h3 class="sobre-mi__titulo">¡Hola! Soy <span>José Ignacio</span></h3>
@@ -370,8 +370,9 @@
         <p class="separador"></p>
     </div>
     <div class="contacto__contenido">
+        
         <div class="contacto__info">
-            <img src="img/perfil-nuevo.jpeg" alt="profile image">
+            <img src="img/perfil-nuevo.jpeg" class="radius" alt="profile image">
             <p>Concepción Tucumán - Argentina</p>
             <p>Email: <span><a href="pulygarcia09@gmail.com">pulygarcia09@gmail.com</a></span></p>
 
@@ -410,22 +411,16 @@
                 </a>
             </div>
         </div>
-
         <div class="contacto__contenedor-formulario hidden">
-            <div class="eye">
-                <div class="up"></div>
-                <div class="mid"></div> 
-                <div class="down"></div> 
-            </div>
             <form class="contacto__formulario" action="https://formspree.io/f/xjvqbbod" method="POST">
                 <div class="contacto__formulario-campo">
-                    <input placeholder="Ingresa tu nombre" class="contacto__input" name="text" type="text" required>
+                    <input placeholder="Nombre" class="contacto__input" name="text" type="text" required>
                 </div>
                 <div class="contacto__formulario-campo">
                     <input placeholder="Correo electrónico" class="contacto__input" name="text" type="email" required>
                 </div>
                 <div class="contacto__formulario-campo">
-                    <input placeholder="Mensaje / comentario" class="contacto__input" name="text" type="text" required>
+                    <input placeholder="Mensaje" class="contacto__input" name="text" type="text" required>
                 </div>
                 <div class="contacto__formulario-campo">
                     <button type="submit" id="btn">Enviar</button>
